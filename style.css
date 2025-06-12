@@ -1,0 +1,164 @@
+body.landing {
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+#fadein-text {
+  opacity: 0;
+  animation: fadein 3s ease-in forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+.next-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.next-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+body.journey {
+  background: #0f0f0f;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  padding: 5% 10%;
+}
+
+.timeline section {
+  margin-bottom: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+.timeline h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #ffcccc;
+}
+
+.fade-list li {
+  opacity: 0;
+  animation: fadein 1.5s ease forwards;
+  animation-delay: calc(0.5s * var(--i));
+  list-style: none;
+  margin: 10px 0;
+  padding-left: 0;
+}
+
+.fade-list li:nth-child(1) { --i: 1; }
+.fade-list li:nth-child(2) { --i: 2; }
+.fade-list li:nth-child(3) { --i: 3; }
+.fade-list li:nth-child(4) { --i: 4; }
+
+.nav {
+  text-align: center;
+  margin-top: 40px;
+}
+
+body.sorry-page {
+  background: linear-gradient(135deg, #111, #222);
+  color: #fff;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 10% 5%;
+}
+
+.sorry-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+#hidden-message {
+  opacity: 0;
+  display: none;
+  font-size: 1.2rem;
+  color: #ffdada;
+  transition: opacity 1.2s ease;
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#reveal-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #ff7f7f;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#reveal-btn:hover {
+  background: #ff4d4d;
+}
+
+body.moments-page {
+  background: #1a1a1a;
+  color: white;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  padding: 5%;
+}
+
+.memories-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.gallery {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.memory {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}

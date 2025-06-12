@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>მაპატიეეეე</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="sorry-page">
+  <div class="sorry-container">
+    <h2>მაპატიეეეეეეე</h2>
+    <p>ნეტა შემეძლოს რომ მოვიდე და ჩაგეხუტო და მორჩა წყენაც დავიწყებულ👍</p>
+    <button id="reveal-btn">დააწექი</button>
+    <p id="hidden-message">
+      “შენი შენ ძალიან ლამაზი და საინტერესოა და არ შეიცვალოო”
+    </p>
+    <div class="nav">
+      <a href="moments.html" class="next-btn">next page →</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('reveal-btn').onclick = () => {
+      const msg = document.getElementById('hidden-message');
+      msg.style.display = 'block';
+      msg.style.opacity = 0;
+      msg.style.transition = 'opacity 1.2s ease';
+      setTimeout(() => {
+        msg.style.opacity = 1;
+      }, 50);
+    };
+  </script>
+</body>
+</html>
